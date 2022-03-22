@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="default.css">
+    <script src="default.js"></script>
+</head>
+<body>
+<div class="nav-top">
+<h1>Work calculator</h1>
+</div>
+<div id="user-settings">
+<h2>User settings</h2>
+    <div>
+        <div class="form-group">
+            <label for="inputName">User's full name</label>
+            <input type="text" value="a" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Your name">
+        </div>
+        <div class="form-group">
+            <label for="inputWage">User's wage</label>
+            <input type="number" value="0" class="form-control" id="inputWage" placeholder="Wage">
+        </div>
+        <button onclick="updateUser()" class="btn btn-primary">Update</button>
+    </div>
+</div>
+<div id="list-of-my-work">
+<h2>List of my work</h2>
+    <div id="dataLol">
+        <div class="work">
+            <h3 id="workNote">Note</h3>
+            <a id="workTime">(Time)</a>
+            <a id="workMoney">Money,-</a>
+            <a id="workWage">Wage/h</a>
+            <a id="workId">id</a>
+            <button onclick="deleteWork(wo)"></button>
+        </div>
+    </div>
+</div>
+<div id="create-new-work">
+<h2>Create new work</h2>
+    <div>
+        <div class="form-group">
+            <label for="inputNote">Note</label>
+            <input type="text" class="form-control" id="inputNote" aria-describedby="noteHelp" placeholder="Notes">
+        </div>
+        <div class="form-group">
+            <label for="fromDate">From</label>
+            <input type="datetime-local" class="form-control" id="fromDate">
+        </div>
+        <div class="form-group">
+            <label for="toDate">To</label>
+            <input type="datetime-local" class="form-control" id="toDate">
+        </div>
+        <button onclick="createWork()" class="btn btn-primary">Update</button>
+    </div>
+</div>
+</body>
+</html>

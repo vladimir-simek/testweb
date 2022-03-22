@@ -1,0 +1,12 @@
+body .nav-top {
+  width: 100vw;
+  height: 75px;
+  background-color: #0dcaf0;
+  display: flex;
+  justify-content: center;
+}
+body .nav-top h1 {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=default.css.map */
